@@ -1,29 +1,41 @@
+:root {
+
+    --cor-primaria: steelblue;
+    --cor-texto-claro: white;
+    --cor-texto-escuro: #333;
+    --cor-fundo-card: #eee;
+    --cor-sombra: gray;
+    --cor-borda-suave: rgb(0 0 0 / 0.2);
+
+    --padding-padrao: 1rem;
+}
+
 main {
     max-width: 840px;
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--cor-primaria);
     padding: 0;
 }
 
 nav a {
-    color: white;
+    color: var(--cor-texto-claro);
     padding: 10px;
     display: block;
 }
 
 h1 {
-    color: steelblue;
+    color: var(--cor-primaria);
 }
 
 aside {
     width: 25rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0/ 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    margin: var(--padding-padrao);
+    border: 1px solid var(--cor-borda-suave);
+    padding: var(--padding-padrao);
+    background-color: var(--cor-fundo-card);
+    color: var(--cor-texto-escuro);
     text-align: center;
 }
 
@@ -35,9 +47,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--cor-primaria);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--cor-sombra);
 }
 
 p {
