@@ -1,0 +1,148 @@
+:root {
+    --cor-primaria: #0B4F6C;
+    /* Azul-petróleo */
+    --cor-secundaria: #D9F0F7;
+    /* Azul-claro */
+    --cor-destaque1: orangered;
+    /* Laranja */
+    --cor-destaque2: #1B3A4B;
+    /* Azul-escuro */
+
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* Remove margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+    background-color: white;
+}
+
+/* Limita a largura da página e centraliza */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    padding: 16px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navegação */
+nav {
+    margin: 8px;
+    padding: 4px;
+}
+
+nav li {
+    display: block;
+    margin-right: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--cor-destaque2);
+}
+
+/* Títulos */
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Parágrafos, seções e artigos */
+p,
+section,
+article {
+    margin: 8px;
+    padding: 4px;
+}
+
+/* Área principal da imagem */
+.hero {
+    position: relative;
+}
+
+/* Imagem principal do hero */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Título sobre a imagem */
+.hero h1 {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--cor-destaque2);
+    color: white;
+}
+
+/* Texto sobre a imagem */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background-color: var(--cor-secundaria);
+    opacity: 1;
+}
+
+/* Imagem dentro do article */
+.hero article img {
+    float: left;
+    width: 125px;
+    margin: 4px;
+    border: 3px solid var(--cor-primaria);
+}
+
+/* Seções */
+section {
+    background-color: var(--cor-secundaria);
+}
+
+section h2 {
+    margin-bottom: 4px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: whitesmoke;
+    text-align: center;
+    padding: 4px;
+}
+
+/* Imagens das redes sociais */
+.redes-sociais img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
