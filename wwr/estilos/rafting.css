@@ -82,10 +82,9 @@ h2 {
 }
 
 /* Parágrafos, seções e artigos */
-p,
-{
-margin: 8px;
-padding: 4px;
+p {
+    margin: 8px;
+    padding: 4px;
 }
 
 /* Área principal da imagem */
