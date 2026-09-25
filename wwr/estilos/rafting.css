@@ -38,6 +38,9 @@ footer {
 header {
     background-color: var(--cor-primaria);
     padding: 16px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
 }
 
 header img {
@@ -47,13 +50,11 @@ header img {
 
 /* Navegação */
 nav {
-    margin: 8px;
-    padding: 4px;
+    margin: 0;
 }
 
 nav li {
-    display: block;
-    margin-right: 8px;
+    list-style: none;
 }
 
 nav a {
@@ -63,6 +64,13 @@ nav a {
 
 nav a:hover {
     color: var(--cor-destaque2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
 /* Títulos */
@@ -75,10 +83,9 @@ h2 {
 
 /* Parágrafos, seções e artigos */
 p,
-section,
-article {
-    margin: 8px;
-    padding: 4px;
+{
+margin: 8px;
+padding: 4px;
 }
 
 /* Área principal da imagem */
@@ -123,23 +130,67 @@ article {
     border: 3px solid var(--cor-primaria);
 }
 
+.aventuras {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.aventuras figure {
+    flex: 1;
+    text-align: center;
+}
+
+.aventuras img {
+    width: 100%;
+    height: auto;
+}
+
+.aventuras figcaption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
 /* Seções */
 section {
     background-color: var(--cor-secundaria);
+    padding: 20px;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
 }
 
 section h2 {
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 /* Rodapé */
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
     background-color: var(--cor-primaria);
     color: whitesmoke;
     text-align: center;
     padding: 4px;
 }
 
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
 .redes-sociais a {
     text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
 }
