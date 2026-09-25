@@ -3,9 +3,9 @@
     /* Azul-petróleo */
     --cor-secundaria: #D9F0F7;
     /* Azul-claro */
-    --cor-destaque1: orangered;
+    --cor-destaque1: darkblue;
     /* Laranja */
-    --cor-destaque2: #1B3A4B;
+    --cor-destaque2: rgb(0, 55, 117);
     /* Azul-escuro */
 
     --fonte-titulo: "Times New Roman", "Georgia", serif;
