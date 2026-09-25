@@ -181,16 +181,16 @@ footer {
     padding: 4px;
 }
 
-.redes-sociais {
+.socialmedia {
     display: flex;
     gap: 10px;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 30px;
     height: 30px;
 }
