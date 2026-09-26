@@ -36,6 +36,7 @@ footer {
 /* Cabeçalho */
 header {
     background-color: var(--cor-primaria);
+    color: white;
     padding: 16px;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -62,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--cor-destaque2);
+    color: var(--cor-secundaria);
 }
 
 nav ul {
