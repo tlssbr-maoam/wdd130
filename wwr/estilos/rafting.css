@@ -154,18 +154,23 @@ p {
 /* Seções */
 section {
     background-color: var(--cor-secundaria);
-    padding: 20px;
+    padding: 5px;
 }
 
 .historia {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
     align-items: center;
-    gap: 20px;
 }
 
-section h2 {
-    margin-bottom: 0;
+.historia h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.historia img {
+    width: 100%;
 }
 
 /* Rodapé */
