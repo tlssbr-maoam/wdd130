@@ -198,3 +198,118 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+/* Fale Conosco */
+
+.contato {
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.contato h1 {
+    margin-bottom: 5px;
+}
+
+.informacoes {
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.contato-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 8px;
+    align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #555;
+}
+
+form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+form fieldset {
+    grid-column: 1 / 3;
+    border: none;
+    margin: 5px 0;
+    padding: 0;
+}
+
+form legend {
+    margin-bottom: 5px;
+}
+
+form fieldset label {
+    display: block;
+    margin: 5px 0;
+}
+
+.newsletter {
+    grid-column: 1 / 3;
+    font-size: 14px;
+}
+
+form button {
+    grid-column: 1 / 3;
+    padding: 8px;
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+form button:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.funcionarios {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: whitesmoke;
+}
+
+.funcionarios h2 {
+    margin-bottom: 15px;
+}
+
+.equipe {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.equipe figure {
+    flex: 1;
+    text-align: center;
+}
+
+.equipe img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.equipe figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+}
