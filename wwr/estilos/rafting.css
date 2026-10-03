@@ -185,16 +185,16 @@ footer {
     padding: 4px;
 }
 
-.socialmedia {
+.redes-sociais {
     display: flex;
     gap: 10px;
 }
 
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 30px;
     height: 30px;
 }
