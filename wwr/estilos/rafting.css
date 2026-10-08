@@ -185,16 +185,16 @@ footer {
     padding: 4px;
 }
 
-.redes-sociais {
+.socialmedia {
     display: flex;
     gap: 10px;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 30px;
     height: 30px;
 }
@@ -312,4 +312,758 @@ form button:hover {
 .equipe figcaption {
     margin-top: 5px;
     font-size: 14px;
+}
+
+.pagina-inicial .hero-inicial {
+    position: relative;
+
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 400px;
+
+    overflow: hidden;
+}
+
+.pagina-inicial .hero-inicial > img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* Mensagem sobre a imagem */
+
+.pagina-inicial .hero-mensagem {
+    position: absolute;
+
+    top: 45px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.pagina-inicial .hero-mensagem h1 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.pagina-inicial .hero-mensagem h2 {
+    font-size: 17px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+/* Botões da página inicial */
+
+.pagina-inicial .botao-inicial {
+    display: inline-block;
+
+    background-color: darkblue;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+
+.pagina-inicial .botao-inicial:hover {
+    background-color: var(--cor-primaria);
+
+    color: white;
+}
+
+/* Apresentação dos passeios */
+
+.pagina-inicial .apresentacao-inicial {
+    background-color: white;
+
+    padding: 45px 35px;
+
+    text-align: center;
+}
+
+.pagina-inicial .apresentacao-inicial > h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+/* Grid dos cards */
+
+.pagina-inicial .cards-iniciais {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.pagina-inicial .card-inicial {
+    text-align: center;
+
+    padding-bottom: 10px;
+}
+
+.pagina-inicial .card-inicial img {
+    display: block;
+
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    border: 4px solid white;
+
+    box-shadow: 0 0 5px gray;
+
+    margin-bottom: 15px;
+}
+
+.pagina-inicial .card-inicial h3 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+.pagina-inicial .card-inicial p {
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.pagina-inicial .link-passeios {
+    margin-top: 25px;
+}
+
+/* Seção de experiência */
+
+.pagina-inicial .experiencia-inicial {
+    position: relative;
+
+    background-color: #d9c09d;
+
+    padding: 35px;
+
+    min-height: 340px;
+}
+
+.pagina-inicial .experiencia-inicial > img {
+    display: block;
+
+    width: 62%;
+    height: 270px;
+
+    object-fit: cover;
+
+    box-shadow: 0 0 5px gray;
+}
+
+.pagina-inicial .experiencia-texto-inicial {
+    position: absolute;
+
+    top: 65px;
+    right: 35px;
+
+    width: 43%;
+
+    padding: 25px;
+
+    background-color: rgba(0, 54, 116, 0.82);
+
+    color: white;
+}
+
+.pagina-inicial .experiencia-texto-inicial h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.pagina-inicial .experiencia-texto-inicial p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+/* Newsletter */
+
+.pagina-inicial .newsletter-inicial {
+    background-color: white;
+
+    padding: 40px 35px;
+
+    text-align: center;
+}
+
+.pagina-inicial .newsletter-inicial h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.pagina-inicial .newsletter-inicial > p {
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+/* Formulário da newsletter */
+
+.pagina-inicial .formulario-newsletter {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+.pagina-inicial .campo-newsletter {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+
+    gap: 6px;
+}
+
+.pagina-inicial .campo-newsletter label {
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.pagina-inicial .campo-newsletter input {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid gray;
+
+    border-radius: 3px;
+
+    font-family: var(--fonte-body);
+}
+
+.pagina-inicial .formulario-newsletter button {
+    grid-column: 1 / 3;
+
+    justify-self: center;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: var(--fonte-body);
+}
+
+.pagina-inicial .aviso-newsletter {
+    font-size: 12px;
+
+    color: #555;
+
+    margin-top: 20px;
+}
+
+/* Ajustes para telas menores */
+
+/* Ajustes para telas menores */
+
+/* Seção principal */
+.pagina-inicial .hero-inicial {
+    height: 300px;
+    width: 840px;
+}
+
+.pagina-inicial .hero-mensagem {
+    top: 100px;
+    padding: 0;
+}
+
+.pagina-inicial .hero-mensagem h1 {
+    font-size: 32px;
+}
+
+/* Cards iniciais */
+.pagina-inicial .cards-iniciais {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.pagina-inicial .card-inicial img {
+    height: 200px;
+    width: 250px;
+}
+
+/* Seção de experiência */
+.pagina-inicial .experiencia-inicial {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 25px;
+}
+
+.pagina-inicial .experiencia-inicial > img {
+    width: 100%;
+    height: 640px;
+}
+
+.pagina-inicial .experiencia-texto-inicial {
+    top: 200px;
+    padding: 0;
+}
+
+.pagina-inicial .experiencia-texto-inicial h2 {
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.pagina-inicial .experiencia-texto-inicial a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+/* Formulário de newsletter */
+.pagina-inicial .formulario-newsletter {
+    grid-template-columns: 1fr;
+}
+
+.pagina-inicial .formulario-newsletter button {
+    grid-column: 1;
+}
+
+/* Banner passeios */
+
+.pagina-passeios .banner-passeios {
+    position: relative;
+
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 320px;
+
+    overflow: hidden;
+}
+
+.pagina-passeios .banner-passeios > img {
+    display: block;
+
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+}
+
+.pagina-passeios .mensagem-banner-passeios {
+    position: absolute;
+
+    top: 55px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 55px;
+
+    text-align: center;
+
+    color: white;
+
+    text-shadow: 8px 8px 4px black;
+}
+
+.pagina-passeios .mensagem-banner-passeios h1 {
+    font-family: var(--fonte-titulo);
+
+    color: #ffffff;
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+.pagina-passeios .mensagem-banner-passeios p {
+    margin-bottom: 25px;
+
+    font-size: 17px;
+}
+
+/* Botões */
+
+.pagina-passeios .botao-passeios {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    background-color: var(--cor-primaria);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 3px;
+}
+
+.pagina-passeios .botao-passeios:hover {
+    background-color: var(--cor-destaque2);
+
+    color: white;
+}
+
+/* Introdução */
+
+.pagina-passeios .introducao-passeios {
+    background-color: white;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.pagina-passeios .introducao-passeios h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.pagina-passeios .introducao-passeios p {
+    line-height: 1.6;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+/* Lista de passeios */
+
+.pagina-passeios .lista-passeios {
+    padding: 35px;
+
+    background-color: var(--cor-secundaria);
+}
+
+.pagina-passeios .lista-passeios > h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 30px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+/* Grid de cartões */
+
+.pagina-passeios .grade-passeios {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+/* Cartões individuais */
+
+.pagina-passeios .card-passeio {
+    background-color: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.pagina-passeios .card-passeio > img {
+    display: block;
+
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+}
+
+.pagina-passeios .conteudo-passeio {
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.pagina-passeios .conteudo-passeio h3 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.pagina-passeios .conteudo-passeio p {
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+.pagina-passeios .conteudo-passeio h4 {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+.pagina-passeios .conteudo-passeio ul {
+    padding-left: 20px;
+
+    margin-bottom: 18px;
+}
+
+.pagina-passeios .conteudo-passeio li {
+    margin-bottom: 7px;
+
+    line-height: 1.4;
+}
+
+.pagina-passeios .conteudo-passeio .observacao-passeio {
+    font-size: 13px;
+
+    color: #444;
+
+    margin-top: auto;
+}
+
+.pagina-passeios .conteudo-passeio .botao-passeios {
+    align-self: flex-start;
+
+    margin-top: 5px;
+}
+
+/* Equipamentos */
+
+.pagina-passeios .equipamentos-passeios {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 20px 15px;
+
+    background-color: white;
+}
+
+.pagina-passeios .equipamentos-passeios > img {
+    width: 400px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    box-shadow: 0 0 5px gray;
+}
+
+.pagina-passeios .equipamentos-passeios article h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 27px;
+
+    margin-bottom: 15px;
+}
+
+.pagina-passeios .equipamentos-passeios article p {
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+.pagina-passeios .equipamentos-passeios ul {
+    padding-left: 20px;
+
+    margin-bottom: 15px;
+}
+
+.pagina-passeios .equipamentos-passeios li {
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+}
+
+/* Tabela comparativa */
+
+.pagina-passeios .tabela-passeios {
+    background-color: var(--cor-secundaria);
+
+    padding: 40px 25px;
+}
+
+.pagina-passeios .tabela-passeios h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 30px;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+.pagina-passeios .tabela-passeios > p {
+    text-align: center;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+/* Permite rolagem horizontal da tabela em telas pequenas */
+
+.pagina-passeios .tabela-rolagem {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.pagina-passeios .tabela-passeios table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    font-size: 13px;
+}
+
+.pagina-passeios .tabela-passeios th {
+    background-color: var(--cor-primaria);
+
+    color: white;
+
+    text-align: left;
+}
+
+.pagina-passeios .tabela-passeios th,
+.pagina-passeios .tabela-passeios td {
+    padding: 12px 10px;
+
+    border: 1px solid #c5c5c5;
+
+    vertical-align: top;
+}
+
+.pagina-passeios .tabela-passeios tbody tr:nth-child(even) {
+    background-color: #f0f5f7;
+}
+
+.pagina-passeios .tabela-passeios tbody tr:hover {
+    background-color: #e2edf2;
+}
+
+.pagina-passeios .tabela-passeios td a {
+    color: var(--cor-destaque1);
+
+    font-weight: bold;
+}
+
+/* Chamada para contato */
+
+.pagina-passeios .chamada-passeios {
+    background-color: white;
+
+    padding: 45px 30px;
+
+    text-align: center;
+}
+
+.pagina-passeios .chamada-passeios h2 {
+    font-family: var(--fonte-titulo);
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.pagina-passeios .chamada-passeios p {
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+/* Ajustes para telas menores */
+
+max-width: 400px {
+
+    .pagina-passeios .banner-passeios {
+        height: 280px;
+    }
+
+    .pagina-passeios .mensagem-banner-passeios {
+        top: 35px;
+    }
+
+    .pagina-passeios .mensagem-banner-passeios h1 {
+        font-size: 32px;
+    }
+
+    .pagina-passeios .grade-passeios {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-passeios .equipamentos-passeios {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-passeios .equipamentos-passeios > img {
+        height: 220px;
+    }
+
+    .pagina-passeios .tabela-passeios {
+        padding: 30px 15px;
+    }
+
+    .pagina-passeios .tabela-passeios table {
+        min-width: 650px;
+    }
 }
