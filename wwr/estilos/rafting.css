@@ -37,7 +37,7 @@ footer {
 header {
     background-color: var(--cor-primaria);
     color: white;
-    padding: 16px;
+    padding: 5px;
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
@@ -70,7 +70,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 90px;
 }
 
 /* Títulos */
@@ -83,7 +83,7 @@ h2 {
 
 /* Parágrafos, seções e artigos */
 p {
-    margin: 8px;
+    margin: 2px;
     padding: 4px;
 }
 
@@ -153,14 +153,15 @@ p {
 
 /* Seções */
 section {
-    background-color: var(--cor-secundaria);
+    background-color: whitesmoke;
     padding: 5px;
+
 }
 
 .historia {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -178,11 +179,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 50px;
+    gap: 170px;
     background-color: var(--cor-primaria);
     color: whitesmoke;
     text-align: center;
-    padding: 4px;
+    padding: 2px;
+}
+
+footer p {
+    font-size: 10px;
 }
 
 .socialmedia {
@@ -195,8 +200,8 @@ footer {
 }
 
 .socialmedia img {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
 }
 
 /* Fale Conosco */
@@ -364,7 +369,7 @@ form button:hover {
 
     font-weight: normal;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Botões da página inicial */
@@ -396,7 +401,7 @@ form button:hover {
 .pagina-inicial .apresentacao-inicial {
     background-color: white;
 
-    padding: 45px 35px;
+    padding: 35px 25px;
 
     text-align: center;
 }
@@ -672,7 +677,7 @@ form button:hover {
 .pagina-passeios .banner-passeios {
     position: relative;
 
-    width: 100%;
+    width: 850px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -685,9 +690,10 @@ form button:hover {
     display: block;
 
     width: 100%;
-    height: 400px;
+    height: 420px;
 
     object-fit: cover;
+    opacity: 50%;
 }
 
 .pagina-passeios .mensagem-banner-passeios {
@@ -704,13 +710,11 @@ form button:hover {
 
     color: white;
 
-    text-shadow: 8px 8px 4px black;
 }
 
 .pagina-passeios .mensagem-banner-passeios h1 {
     font-family: var(--fonte-titulo);
-
-    color: #ffffff;
+    color: darkblue;
 
     font-size: 38px;
 
@@ -719,8 +723,8 @@ form button:hover {
 
 .pagina-passeios .mensagem-banner-passeios p {
     margin-bottom: 25px;
-
-    font-size: 17px;
+    color: darkblue;
+    font-size: 20px;
 }
 
 /* Botões */
